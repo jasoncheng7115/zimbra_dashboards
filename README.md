@@ -5,7 +5,7 @@ Zimbra Prometheus Exporter + Grafana Dashboard
 ![Demo](https://github.com/jasoncheng7115/zimbra_dashboards/blob/main/dashboard_english.png?raw=true)
 
 
-The following environment is required and tested:
+The following environment is tested:
 * Zimbra 8.8.15 
 * Python 3.6
 * Prometheus 2.18
