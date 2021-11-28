@@ -1,0 +1,11 @@
+[Unit]
+Description=Zimbra Exporter
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/zimbra_exporter.py
+       
+[Install]
+WantedBy=multi-user.target
