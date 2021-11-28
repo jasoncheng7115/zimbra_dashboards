@@ -56,7 +56,7 @@ PORT_WEBCLIENT = '443'
 ```
   
   
-## Add prometheus scrape configs:
+## Add prometheus scrape config:
 ```
  # Zimbra Exporter
   - job_name: 'zimbra'
