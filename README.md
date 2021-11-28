@@ -67,8 +67,7 @@ PORT_WEBCLIENT = '443'
 ```
 
 
-
-## As a service:
+## Set to run as a service:
 
 ```
 wget https://raw.githubusercontent.com/jasoncheng7115/zimbra_dashboards/main/zimbra_exporter.service -O /etc/systemd/system/zimbra_exporter.service
@@ -76,5 +75,4 @@ wget https://raw.githubusercontent.com/jasoncheng7115/zimbra_dashboards/main/zim
 systemctl daemon-reload
 systemctl start zimbra_exporter
 systemctl enable zimbra_exporter
-
 ```
