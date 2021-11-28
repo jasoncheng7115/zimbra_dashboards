@@ -3,9 +3,9 @@
 Zimbra Prometheus Exporter + Grafana Dashboard
 
 The following environment is required and tested:
-* Zimbra 8.8.15+ 
-* Python 3.6+
-* Prometheus 
+* Zimbra 8.8.15 
+* Python 3.6
+* Prometheus 2.18
 * Grafana 8.2.5
 
 ```
