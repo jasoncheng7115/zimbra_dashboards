@@ -13,7 +13,7 @@ The following environment is required and tested:
 
 
 
-```bash
+```
 pip3 install flask
 pip3 install prometheus_client
 pip3 install psutil
@@ -24,6 +24,38 @@ chmod +x /opt/zimbra_exporter.py
 wget https://raw.githubusercontent.com/jmutai/telegraf-ansible/master/templates/zimbra_pflogsumm.pl.j2 -O /opt/zimbra_pflogsumm.pl
 chmod +x /opt/zimbra_pflogsumm.pl
 
+```
+
+>  p.s:The zimbra part of the stats information uses jmutai's "zimbra_pflogsumm.pl" to handle log data
+
+
+  
+    
+Required Modified variables in the zimbra_exporter.py:
+
+```
+PORT_EXPORTER = 9093
+
+MAILSERVER = 'mail.zimbra.domain'
+EXCLUDE_DOMAIN = '' # If you want to filter out a specific domain, please add it here.
+
+PORT_SMTP = '25'
+PORT_IMAP = '143'
+PORT_IMAPS = '993'
+PORT_POP3 = '110'
+PORT_POP3S = '995'
+PORT_WEBCLIENT = '443'
+
+```
+
+  
+  
+
+
+
+## As a service:
+
+```
 wget https://raw.githubusercontent.com/jasoncheng7115/zimbra_dashboards/main/zimbra_exporter.service -O /etc/systemd/system/zimbra_exporter.service
 
 systemctl daemon-reload
@@ -31,6 +63,3 @@ systemctl start zimbra_exporter
 systemctl enable zimbra_exporter
 
 ```
-
-
->  p.s:The zimbra part of the stats information uses jmutai's "zimbra_pflogsumm.pl" to handle log data
