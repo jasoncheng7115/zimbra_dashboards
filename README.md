@@ -8,7 +8,7 @@ The following environment is required and tested:
 * Prometheus 2.18
 * Grafana 8.2.5
 
-```
+```bash
 pip3 install flask
 pip3 install prometheus_client
 pip3 install psutil
