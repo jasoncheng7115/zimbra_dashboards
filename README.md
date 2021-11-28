@@ -45,11 +45,11 @@ PORT_POP3 = '110'
 PORT_POP3S = '995'
 PORT_WEBCLIENT = '443'
 ```
-
+  
   
 ## Add prometheus scrape configs:
 ```
- # Zimbra Exporer
+ # Zimbra Exporter
   - job_name: 'zimbra'
     scrape_interval: 60s
     scrape_timeout: 30s
@@ -57,7 +57,6 @@ PORT_WEBCLIENT = '443'
     static_configs:
     - targets: ['zimbraserver:9093']
 ```
-
 
 
 
