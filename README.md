@@ -47,7 +47,17 @@ PORT_WEBCLIENT = '443'
 ```
 
   
-  
+## Add prometheus scrape configs:
+```
+ # Zimbra Exporer
+  - job_name: 'zimbra'
+    scrape_interval: 60s
+    scrape_timeout: 30s
+    honor_labels: true
+    static_configs:
+    - targets: ['zimbraserver:9093']
+```
+
 
 
 
