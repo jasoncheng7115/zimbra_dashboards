@@ -1,8 +1,12 @@
 # Zimbra Dashboard
 
-Zimbra + Prometheus Exporter + Grafana Dashboard
+Zimbra Prometheus Exporter + Grafana Dashboard
 
-base on Python 3.6+
+The following environment is required and tested:
+* Zimbra 8.8.15+ 
+* Python 3.6+
+* Prometheus 
+* Grafana 8.2.5
 
 ```
 pip3 install flask
