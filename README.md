@@ -23,7 +23,6 @@ chmod +x /opt/zimbra_exporter.py
 
 wget https://raw.githubusercontent.com/jmutai/telegraf-ansible/master/templates/zimbra_pflogsumm.pl.j2 -O /opt/zimbra_pflogsumm.pl
 chmod +x /opt/zimbra_pflogsumm.pl
-
 ```
 
 >  p.s:The zimbra part of the stats information uses jmutai's "zimbra_pflogsumm.pl" to handle log data
@@ -45,7 +44,6 @@ PORT_IMAPS = '993'
 PORT_POP3 = '110'
 PORT_POP3S = '995'
 PORT_WEBCLIENT = '443'
-
 ```
 
   
