@@ -2,6 +2,10 @@
 
 Zimbra Prometheus Exporter + Grafana Dashboard
 
+* Grafana dashboard:
+  https://grafana.com/orgs/jason5961
+
+
 ![Demo](https://github.com/jasoncheng7115/zimbra_dashboards/blob/main/dashboard_english.png?raw=true)
 
 
@@ -14,8 +18,7 @@ The following environment is tested:
 
 ---
 
-* Grafana dashboard:
-  https://grafana.com/orgs/jason5961
+
 
   
 
