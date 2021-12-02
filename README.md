@@ -12,7 +12,7 @@ Zimbra Prometheus Exporter + Grafana Dashboard
 The following environment is tested:
 * Ubuntu 18.04
 * Zimbra 8.8.15 
-* Python 3.6
+* Python 3.6 & PIP3
 * Prometheus 2.18
 * Grafana 8.2.5
 
