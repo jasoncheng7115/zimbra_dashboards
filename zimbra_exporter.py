@@ -132,7 +132,7 @@ def getcheck():
     Gauge("zimbra_iowait","IO_Wait:",registry=REGISTRY).set(str(psutil.cpu_times_percent()).split(",")[4].split("=")[1].strip())
     Gauge("zimbra_uptime","Up Time:",registry=REGISTRY).set((time.time()-psutil.boot_time())/60/60/24)
 
-    get_df = os.popen('df -h / | cut -d \" \" -f12').read().strip().replace("%","")
+    get_df = os.popen('df / --output=pcent | tail -n 1').read().strip().replace('%','')
     zv = Gauge("zimbra_disk_usage","Disk Usage:",registry=REGISTRY).set(get_df)
 
 
